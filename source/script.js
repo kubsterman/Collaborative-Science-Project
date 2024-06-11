@@ -1,5 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+// THIS NEEDS A LOCAL SERVER ;( 
+// import data from 'data.json' assert {type: 'json'};
+//     console.log(data)
 
+document.addEventListener('DOMContentLoaded', function() {
+    
+    //temp placeholder data
     const data = [
         {label: "Poland", value: 40},
         {label: "Tilted Towers", value: 55},
@@ -9,20 +14,25 @@ document.addEventListener('DOMContentLoaded', function() {
         {label: "Chorzów", value: 70}
     ];
 
+    
+    //get data
     const labels = data.map(item => item.label);
     const values = data.map(item => item.value);
 
+    //initiate canvas and graph
     const ctx = document.getElementById('barchart').getContext('2d');
-    const myBarChart = new Chart(ctx, {
+    const BarChart = new Chart(ctx, {
+        //graph properties
         type: 'bar',
         data: {
             labels: labels,
             datasets: [{
                 label: 'car crashes :(',
                 data: values,
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: '#A89B9D',
+                borderColor: '#816C61',
                 borderWidth: 1
+            
             }]
         },
         options: {
