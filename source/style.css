@@ -1,18 +1,54 @@
+/* color palette */
+:root {
+  --primary-color: #101935;
+  --secondary-color: #9AD4D6;
+  --tertiary-color: #F2FDFF;
+  --quaternary-color: #DBCBD8;
+  --quinary-color: #564787;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #2A2C24;
-  accent-color: #575A4B;
-  color: #816C61;
-  
+  background-color: var(--primary-color); 
+}
+.container {
+    width: 50%;
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+}
+.bar-button{
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: var(--secondary-color); 
+  color: var(--primary-color); 
+  height: 100%;
+  width: 25%;
+  font-size: 50px; 
+  border-width: 0px;
+  transition: 0.5s ease;
+}
+.bar-button:hover{
+  background-color: var(--tertiary-color); 
+  height: 125%;
+}
+.top-bar {
+  position: fixed; 
+  height: 200px;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  background-color: var(--secondary-color); 
+  padding: 10px; 
+  text-align: center; 
+  font-size: 40px; 
+  z-index: 100;
 }
 
-.container {
-    width: 80%;
-    max-width: 600px;
-   
-}

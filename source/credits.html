@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .scrolling-text {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            color: #DBCBD8;
+            
+        }
+
+        .scrolling-text p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 100px;
+            text-align: center;
+            animation: scroll 3s ease-in-out;
+            transform: translateY(40%)
+        }
+        /* scroll animation */
+        @keyframes scroll {
+            0% {
+                transform: translateY(100%);
+            }
+            100%{
+                transform: translateY(40%);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        
+        <h1 style="color:var(--primary-color)">Collaborative Science Project</h1> 
+        <button onclick="window.location.href='main.html'" class="bar-button" style="transform: translateX(-50%); width: 50%; font-size: 75px; font-weight: bold;">Collaborative Science Project</button>
+        <div>
+            <button onclick="window.location.href='credits.html'" class="bar-button" style="transform: translateX(100%); font-style: italic;">Credits</button>
+            <button onclick="window.location.href='sources.html'" class="bar-button" style="transform: translateX(-200%); font-style: italic;">Sources</button>
+        </div>
+    </div>
+
+    <!-- SCROLLING CREDITS -->
+    <div class="scrolling-text" style="display: block; line-height: 6;" >
+        <p style=" font-size: 75px; color:var(--secondary-color);">Jakub Bartczak:</p> <br>
+        <p style="font-style: italic; line-height: 0; font-size: 50px; color:var(--secondary-color);">programming</p> <br>
+        <p style="font-size: 75px; color:var(--secondary-color); ">Kilian Kania:</p><br>
+        <p style="font-style: italic; line-height: 0; font-size: 50px; color:var(--secondary-color);">research</p> <br>
+        <p style="font-size: 75px; color:var(--secondary-color);">Paweł Apczynski:</p><br>
+        <p style="font-style: italic; line-height: 0; font-size: 50px; color:var(--secondary-color);">design</p><br>
+        <p style="font-size: 75px; color:var(--secondary-color);">Piotr Dróżdż:</p> <br>
+        <p style="font-style: italic; line-height: 0; font-size: 50px; color:var(--secondary-color);">writing</p>
+    </div>
+</body>
+</html>
