@@ -19,7 +19,7 @@ body {
 .container {
     display: block;
     width: 50%;
-    height: 450px;
+    height: auto;
     text-align: center;
 }
 .bar-button{
