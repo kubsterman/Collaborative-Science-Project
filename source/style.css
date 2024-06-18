@@ -17,8 +17,9 @@ body {
   background-color: var(--primary-color); 
 }
 .container {
+    display: block;
     width: 50%;
-    width: 1000px;
+    width: 400px;
     height: 500px;
     text-align: center;
 }
@@ -50,5 +51,12 @@ body {
   text-align: center; 
   font-size: 40px; 
   z-index: 100;
+}
+
+.sub-text{
+    font-style: italic; 
+    line-height: 0; 
+    font-size: 35px; 
+    color:var(--secondary-color);
 }
 

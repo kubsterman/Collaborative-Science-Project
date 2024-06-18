@@ -1,8 +1,5 @@
 [
-    {"label": "Poland", "value": 40},
-    {"label": "Tilted Towers", "value": 55},
-    {"label": "Lorum Ipsum", "value": 75},
-    {"label": "Salty Springs", "value": 60},
-    {"label": "Moisty Mires", "value": 80},
-    {"label": "Chorzów", "value": 70}
+    {"label": "Fatal", "value": 39508},
+    {"label": "Injury", "value": 1727608},
+    {"label": "Lorum Ipsum", "value": 4335820}
 ]
