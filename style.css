@@ -19,8 +19,7 @@ body {
 .container {
     display: block;
     width: 50%;
-    width: 600px;
-    height: 500px;
+    height: 450px;
     text-align: center;
 }
 .bar-button{
@@ -41,10 +40,10 @@ body {
   height: 125%;
 }
 .top-bar {
+  display: flex;
   position: fixed; 
   height: auto;
   top: 0; 
-  left: 0; 
   width: 100%;
   background-color: var(--secondary-color); 
   padding: 10px; 
