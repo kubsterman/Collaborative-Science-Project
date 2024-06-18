@@ -19,7 +19,7 @@ body {
 .container {
     display: block;
     width: 50%;
-    width: 400px;
+    width: 600px;
     height: 500px;
     text-align: center;
 }
@@ -42,7 +42,7 @@ body {
 }
 .top-bar {
   position: fixed; 
-  height: 200px;
+  height: 150px;
   top: 0; 
   left: 0; 
   width: 100%; 

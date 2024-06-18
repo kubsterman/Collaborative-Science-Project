@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>visualisations</title>
+    <title>Collaborative Science Project</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style></style>
@@ -10,7 +10,7 @@
     <div class="top-bar">
         
         <h1 style="color:var(--primary-color)">Collaborative Science Project</h1> 
-        <button onclick="window.location.href='main.html'" class="bar-button" style="transform: translateX(-50%); width: 50%; font-size: 75px; font-weight: bold;">Collaborative Science Project</button>
+        <button onclick="window.location.href='index.html'" class="bar-button" style="transform: translateX(-50%); width: 50%; font-size: 75px; font-weight: bold;">Collaborative Science Project</button>
         <div>
             <button onclick="window.location.href='credits.html'" class="bar-button" style="transform: translateX(100%); font-style: italic;">Credits</button>
             <button onclick="window.location.href='sources.html'" class="bar-button" style="transform: translateX(-200%); font-style: italic;">Sources</button>
@@ -30,10 +30,13 @@
     <div class="container" style="color:var(--secondary-color); transform: translateY(200%);">
         <h1>UNITED STATES</h1>
         <p style="font-size: 25px">Road accident fatalities in the United States by blood alcohol content. (BAC)</p>
-        <canvas class="graph" id="barchart"></canvas>
+        <canvas class="graph" id="USchart"></canvas>
         <h1>UNITED KINGDOM</h1>
-        <canvas class="graph" id="linechart"></canvas>
+        <p style="font-size: 25px">Road accidents in the United Kingdom since 2016 to 2021.</p>
+        <canvas class="graph" id="UKchart"></canvas>
         <h1>POLAND</h1>
+        <p style="font-size: 25px">Percentage of road accidents in Poland caused by intoxination.</p>
+        <canvas class="graph" id="PLchart"></canvas>
     </div>
     <script src="script.js"></script>
 </body>
