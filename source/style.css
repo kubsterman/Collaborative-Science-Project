@@ -60,3 +60,9 @@ body {
     color:var(--secondary-color);
 }
 
+p{
+  font-size: 35px; 
+  color: var(--secondary-color); 
+  text-align: center; 
+  font-style: italic;
+}
